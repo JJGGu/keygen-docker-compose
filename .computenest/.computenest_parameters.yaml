@@ -1,0 +1,23 @@
+ServiceType: private
+ArtifactSourceType: DockerCompose
+ServiceBuildRegion: ap-southeast-1
+RepoName: JJGGu/keygen-docker-compose
+DockerComposeEnvPath: .env
+RegionId: cn-hangzhou
+CustomParameters:
+- NoEcho: false
+  Type: String
+  AllowedPattern: ''
+  Label: 用户名称
+  ConstraintDescription: ''
+  Name: KEYGEN_ADMIN_USER
+- NoEcho: false
+  Type: String
+  AllowedPattern: ''
+  Label: 密码
+  ConstraintDescription: ''
+  Name: KEYGEN_ADMIN_PASS
+DockerComposeYamlPath: docker-compose.yaml
+Owner: JJGGu
+Branch: master
+Platform: github
